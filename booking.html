@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison de Beauté - Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="top">PRIVATE APPOINTMENT</p>
+        <h1>Reserve Your Visit</h1>
+        <p>Select a service, choose your time, and leave the rest to us</p>
+    </header>
+  <main class="booking-wrap">
+
+    <section class="left-side">
+      
+      <div class="select-service">
+        <span>SELECT A SERVICE</span>
+      </div>
+
+      <div class="services">
+        <div class="cut-and-style">
+          <div class="service-details">
+            <h2 class="cut-and-style-name">Cut & style</h2>
+            <span class="cut-and-style-meta">60 min</span>
+          </div>
+          <div class="cut-and-style-price">$85</div>
+        </div>
+
+        <div class="colour">
+          <div class="service-details">
+            <h2 class="colour-name">Colour</h2>
+            <span class="colour-meta">90 min</span>
+          </div>
+          <div class="colour-price">$140</div>
+        </div>
+
+        <div class="balayage">
+          <div class="service-details">
+            <h2 class="balayage-name">Balayage</h2>
+            <span class="balayage-meta">150 min</span>
+          </div>
+          <div class="balayage-price">$210</div>
+        </div>
+
+        <div class="treatment">
+          <div class="service-details">
+            <h2 class="treatment-name">Treatment</h2>
+            <span class="treatment-meta">90 min</span>
+          </div>
+          <div class="treatment-price">$120</div>
+        </div>
+      </div>
+
+      <div class="pick-date">
+        <span>PICK A TIME AND DATE</span>
+      </div>
+
+      <div class="datetime-picker-layout">
+        
+        <div class="calendar-container">
+          <div class="cal-head">
+            <button class="cal-nav">&#8249;</button>
+            <div class="cal-month-year">September 2025</div>
+            <button class="cal-nav">&#8250;</button>
+          </div>
+          
+          <div class="cal-grid">
+            <div class="cal-dow">Su</div>
+            <div class="cal-dow">Mo</div>
+            <div class="cal-dow">Tu</div>
+            <div class="cal-dow">We</div>
+            <div class="cal-dow">Th</div>
+            <div class="cal-dow">Fr</div>
+            <div class="cal-dow">Sa</div>
+      
+            <div class="cal-day other">31</div>
+            <div class="cal-day">1</div>
+            <div class="cal-day">2</div>
+            <div class="cal-day">3</div>
+            <div class="cal-day">4</div>
+            <div class="cal-day">5</div>
+            <div class="cal-day">6</div>
+      
+            <div class="cal-day">7</div>
+            <div class="cal-day">8</div>
+            <div class="cal-day today">9</div> 
+            <div class="cal-day selected">10</div> 
+            <div class="cal-day">11</div>
+            <div class="cal-day">12</div>
+            <div class="cal-day">13</div>
+      
+            <div class="cal-day">14</div>
+            <div class="cal-day">15</div>
+            <div class="cal-day">16</div>
+            <div class="cal-day">17</div>
+            <div class="cal-day">18</div>
+            <div class="cal-day">19</div>
+            <div class="cal-day">20</div>
+            
+            <div class="cal-day">21</div>
+            <div class="cal-day">22</div>
+            <div class="cal-day">23</div>
+            <div class="cal-day">24</div>
+            <div class="cal-day">25</div>
+            <div class="cal-day">26</div>
+            <div class="cal-day">27</div>
+      
+            <div class="cal-day">28</div>
+            <div class="cal-day">29</div>
+            <div class="cal-day">30</div>
+            <div class="cal-day other">1</div>
+            <div class="cal-day other">2</div>
+            <div class="cal-day other">3</div>
+            <div class="cal-day other">4</div>
+          </div>
+        </div>
+
+        <div class="time-slots-container">
+          <div class="time-headline">Available times</div>
+          <div class="time-list">
+            <div class="time-slot"><span>9:00 AM</span><span class="avail">Available</span></div>
+            <div class="time-slot"><span>9:30 AM</span><span class="avail">Available</span></div>
+            <div class="time-slot"><span>10:30 AM</span><span class="avail">Available</span></div>
+            <div class="time-slot"><span>11:00 AM</span><span class="avail">Available</span></div>
+            <div class="time-slot selected"><span>11:30 AM</span><span class="avail">Available</span></div>
+            <div class="time-slot"><span>2:00 PM</span><span class="avail">Available</span></div>
+            <div class="time-slot"><span>3:30 PM</span><span class="avail">Available</span></div>
+            <div class="time-slot"><span>4:00 PM</span><span class="avail">Available</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="right-side">
+      
+      <div class="enter-details">
+        <span>ENTER YOUR DETAILS</span>
+      </div>
+
+      <form class="details-form" onsubmit="event.preventDefault();">
+        <div class="field-row">
+          <div class="first-name">
+            <label>FIRST NAME</label>
+            <input type="text" required>
+          </div>
+          <div class="last-name">
+            <label>LAST NAME</label>
+            <input type="text" required>
+          </div>
+        </div>
+
+        <div class="email">
+          <label>EMAIL</label>
+          <input type="email" required>
+        </div>
+
+        <div class="phone-number">
+          <label>PHONE NUMBER</label>
+          <input type="tel" required>
+        </div>
+
+        <div class="notes">
+          <label>NOTES FOR STYLIST</label>
+          <textarea></textarea>
+        </div>
+
+        <button id="submitBtn" class="submit-button">REQUEST APPOINTMENT</button>
+      </form>
+
+    </section>
+  </main>
+
+
+  <script>
+  // --- CONFIGURATION & CONSTANTS ---
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  let currentMonthIndex = 8; 
+  let currentYear = 2025;
+  let selectedDayNum = 10;
+  let selectedTimeSlot = '11:30 AM'; 
+
+  // --- CALENDAR RENDERING ENGINE ---
+  function renderInteractiveCalendar() {
+    const labelEl = document.querySelector('.cal-month-year');
+    if (labelEl) {
+      labelEl.textContent = `${MONTHS[currentMonthIndex]} ${currentYear}`;
+    }
+
+    const gridEl = document.querySelector('.cal-grid');
+    if (!gridEl) return;
+    
+    const dowHeaders = Array.from(gridEl.querySelectorAll('.cal-dow'));
+    gridEl.innerHTML = '';
+    dowHeaders.forEach(header => gridEl.appendChild(header));
+
+    const presentationDate = new Date(currentYear, currentMonthIndex, 1);
+    const startDayOfWeekOffset = presentationDate.getDay(); 
+    const totalDaysInActiveMonth = new Date(currentYear, currentMonthIndex + 1, 0).getDate();
+    const totalDaysInPreviousMonth = new Date(currentYear, currentMonthIndex, 0).getDate();
+    const liveSystemToday = new Date();
+
+    for (let i = 0; i < startDayOfWeekOffset; i++) {
+      const dayItem = document.createElement('div');
+      dayItem.className = 'cal-day other';
+      dayItem.textContent = totalDaysInPreviousMonth - startDayOfWeekOffset + 1 + i;
+      gridEl.appendChild(dayItem);
+    }
+
+    for (let dayNum = 1; dayNum <= totalDaysInActiveMonth; dayNum++) {
+      const dayItem = document.createElement('div');
+      dayItem.className = 'cal-day';
+      dayItem.textContent = dayNum;
+
+      const isSelectedState = (dayNum === selectedDayNum);
+      const isSystemTodayState = (
+        dayNum === liveSystemToday.getDate() && 
+        currentMonthIndex === liveSystemToday.getMonth() && 
+        currentYear === liveSystemToday.getFullYear()
+      );
+
+      if (isSelectedState) {
+        dayItem.classList.add('selected');
+      } else if (isSystemTodayState) {
+        dayItem.classList.add('today');
+      }
+
+      dayItem.addEventListener('click', () => {
+        selectedDayNum = dayNum;
+        renderInteractiveCalendar();
+      });
+
+      gridEl.appendChild(dayItem);
+    }
+
+    const filledGridCellCount = startDayOfWeekOffset + totalDaysInActiveMonth;
+    const remainingTrailingCells = filledGridCellCount % 7;
+    if (remainingTrailingCells > 0) {
+      const cellsToAppend = 7 - remainingTrailingCells;
+      for (let i = 1; i <= cellsToAppend; i++) {
+        const dayItem = document.createElement('div');
+        dayItem.className = 'cal-day other';
+        dayItem.textContent = i;
+        gridEl.appendChild(dayItem);
+      }
+    }
+  }
+
+  function setupTimeSlotSelection() {
+    const timeSlotsList = document.querySelectorAll('.time-slot');
+    
+    timeSlotsList.forEach(slotItem => {
+      slotItem.addEventListener('click', () => {
+        timeSlotsList.forEach(item => item.classList.remove('selected'));
+        slotItem.classList.add('selected');
+        
+        const timeSpan = slotItem.querySelector('span:first-child');
+        if (timeSpan) {
+          selectedTimeSlot = timeSpan.textContent.trim();
+        }
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const prevArrowBtn = document.querySelector('.cal-nav:first-child');
+    if (prevArrowBtn) {
+      prevArrowBtn.addEventListener('click', () => {
+        currentMonthIndex--;
+        if (currentMonthIndex < 0) {
+          currentMonthIndex = 11;
+          currentYear--;
+        }
+        selectedDayNum = 1; 
+        renderInteractiveCalendar();
+      });
+    }
+
+    const nextArrowBtn = document.querySelector('.cal-nav:last-child');
+    if (nextArrowBtn) {
+      nextArrowBtn.addEventListener('click', () => {
+        currentMonthIndex++;
+        if (currentMonthIndex > 11) {
+          currentMonthIndex = 0;
+          currentYear++;
+        }
+        selectedDayNum = 1; 
+        renderInteractiveCalendar();
+      });
+    }
+
+    renderInteractiveCalendar();
+    setupTimeSlotSelection();
+  });
+
+    const submitButton = document.getElementById('submitBtn');
+
+    submitButton.addEventListener('click', () => {
+        window.location.href = 'booking-confirmed.html';
+    });
+
+
+  </script>
+</body>
+</html>

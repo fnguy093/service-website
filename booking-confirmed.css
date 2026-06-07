@@ -1,0 +1,68 @@
+*, *::before, *::after {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  html, body { 
+    height: 100%; 
+  }
+  
+  body { 
+    background: black; 
+    color: #f0ece4; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300; 
+    min-height: 100vh; 
+  }
+  
+  
+  .page-header { 
+    grid-column: 1 / -1; 
+    text-align: center; 
+    padding: 70px 40px 50px; 
+    border-bottom: 1px solid #d4af37; 
+
+}
+  
+
+  .icon-success {
+    color: #d4af37;           /* Elegant brand gold */
+    font-size: 3rem;          /* Makes it large and prominent */
+    font-weight: 200;         /* Keeps the stroke whisper-thin and premium */
+    display: block;
+    margin: 0 auto 24px;      /* Centers it and adds space underneath */
+    text-align: center;
+  }
+  
+
+.confirmation{
+    flex: 1;
+    display: flex;
+    flex-direction: column;   /* This forces the elements to stack vertically */
+    justify-content: center;  /* Centers everything vertically within the 80vh box */
+    align-items: center;      /* Centers everything horizontally on the screen */
+    text-align: center;
+    padding: 50px;
+    min-height: 80vh;
+    gap:40px;
+}
+.home-button{ 
+    width: 300px; 
+    background: black; 
+    color: #d4af37; 
+    border-color:#d4af37;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.72rem; 
+    font-weight: 600; 
+    letter-spacing: 3px; 
+    padding: 18px; 
+    margin-top: 15px; 
+    cursor: pointer; 
+    transition: all 0.3s; 
+  }
+  
+  .home-button:hover { 
+    background: #d4af37; 
+    color:black
+  }
